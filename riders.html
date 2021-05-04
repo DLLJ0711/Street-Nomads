@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Street Nomads</title>
+  
+  <style>
+    body{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("mccbg.jpg");
+      background-attachment: fixed;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide">STREET NOMADS</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="riders.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>RIDERS</a>
+        <a href="work.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        <a href="pricing.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+      ×</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="riders.html" onclick="w3_close()" class="w3-bar-item w3-button">RIDERS</a>
+    <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="pricing.html" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h1 class="w3-center">THE TEAM</h1>
+    <h2 class="w3-center w3-large">CLUB OWNERS</h2>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l6 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="MatthewAmescua.jpg" alt="Matt" style="width:100%; height: 400px">
+          <div class="w3-container">
+            <h3>Matthew Amescua</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>I am a retired Master Sergeant of 20 years in the United States Marine Corps. I am loving the retire life and spend 
+              the majority of my time with my family (my wife Jamie, and two sons Jordan and Mason).  I'm doge guy and currently have 
+              a charger scat-pack.  I am a natural car guy, audio/visual, mechanics all self taught.  I started this car club because I 
+              have been in serveral in my younger days and I feel when cool people get together to show off the work and time they have
+              put into their vehicles it always turns into a good time.  Hope to see you all out their.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l6 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="IMG-0073.jpg" alt="David" style="width:100%; height: 400px;">
+          <div class="w3-container">
+            <h3>David McFadden</h3>
+            <p class="w3-opacity">Web Designer & Co-Founder</p>
+            <p>As a 12 year veteran in the United States Marine Corps Enjoyed my last days active duty as a Marine Corps Drill
+              Instructor.  Currently I am a Full Stack Web Developer and loving it. I have four beautiful daughters(A'Santi
+              A'Nya, A'Ria and A'Mila) who mean the world to me. I have a Cadillac CTS coupe and currently my brother Matt 
+              is walking me through the steps to make it look and sound good! I'm looking forward to all the riders that join
+              and all the hard work and money you all have put into your vehicles.
+      
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <p class="w3-opacity">Web Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">2</span>
+      <br>Riders
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">50+</span>
+      <br>Trips
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">2</span>
+      <br>Happy Members
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">0</span>
+      <br>Meetings
+    </div>
+  </div>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
